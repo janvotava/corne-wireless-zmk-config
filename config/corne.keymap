@@ -11,9 +11,9 @@
 
 / {
     behaviors {
-        am: am {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "alpha_mods";
+            label = "HOMEROW_MODS";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -38,7 +38,7 @@
 
             bindings = <
   &kp TAB           &kp Q  &kp W     &kp F  &kp P      &kp B      &kp J  &kp L      &kp U    &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &am LEFT_GUI A  &kp R     &kp S  &kp T      &kp G      &kp M  &kp N      &kp E    &kp I  &am RIGHT_GUI O   &kp SQT
+&kp LCTRL  &hm LEFT_GUI A  &kp R     &kp S  &kp T      &kp G      &kp M  &kp N      &kp E    &kp I  &hm RIGHT_GUI O   &kp SQT
 &kp LSHFT           &kp Z  &kp X     &kp C  &kp D      &kp V      &kp K  &kp H  &kp COMMA  &kp DOT         &kp FSLH   &kp ESC
                                   &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2   &kp RALT
             >;
