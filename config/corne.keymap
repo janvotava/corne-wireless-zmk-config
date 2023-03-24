@@ -60,7 +60,7 @@
 &none           &kp Q           &kp W        &kp F             &kp P      &kp B      &kp J              &kp L               &kp U            &kp Y    &kp SEMICOLON  &none
 &none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T      &kp G      &kp M  &hm RIGHT_SHIFT N         &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &none
 &none           &kp Z           &kp X        &kp C             &kp D      &kp V      &kp K              &kp H           &kp COMMA          &kp DOT         &kp FSLH  &none
-                                       &grave_keep         &lt 1 TAB  &kp SPACE    &kp RET    &lt 2 BACKSPACE  &lt 3 SINGLE_QUOTE
+                                           &kp TAB       &grave_keep  &kp SPACE    &kp RET    &lt 2 BACKSPACE  &lt 3 SINGLE_QUOTE
             >;
         };
 
