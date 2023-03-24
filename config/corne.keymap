@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_KEEP";
             bindings =
-                <&kp ESCAPE>,
+                <&lt 1 ESCAPE>,
                 <&kp GRAVE>;
 
             #binding-cells = <0>;
