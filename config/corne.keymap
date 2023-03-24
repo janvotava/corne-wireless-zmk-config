@@ -48,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none           &kp Q           &kp W        &kp F             &kp P      &kp B      &kp J              &kp L             &kp U            &kp Y    &kp SEMICOLON  &none
-&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T      &kp G      &kp M  &hm RIGHT_SHIFT N       &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &none
-&none           &kp Z           &kp X        &kp C             &kp D      &kp V      &kp K              &kp H         &kp COMMA          &kp DOT         &kp FSLH  &none
-                                       &grave_keep         &lt 1 TAB  &kp SPACE    &kp RET    &lt 2 BACKSPACE  &kp SINGLE_QUOTE
+&none           &kp Q           &kp W        &kp F             &kp P      &kp B      &kp J              &kp L               &kp U            &kp Y    &kp SEMICOLON  &none
+&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_SHIFT T      &kp G      &kp M  &hm RIGHT_SHIFT N         &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &none
+&none           &kp Z           &kp X        &kp C             &kp D      &kp V      &kp K              &kp H           &kp COMMA          &kp DOT         &kp FSLH  &none
+                                       &grave_keep         &lt 1 TAB  &kp SPACE    &kp RET    &lt 2 BACKSPACE  &lt 3 SINGLE_QUOTE
             >;
         };
 
@@ -82,6 +82,15 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &trans
  &none  &out OUT_TOG        &trans        &trans        &trans    &bt BT_CLR    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &trans
                                         &kp LGUI        &trans     &kp SPACE      &kp RET     &trans           &trans
+            >;
+        };
+
+        functional {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans      &trans    &trans  &trans
             >;
         };
     };
