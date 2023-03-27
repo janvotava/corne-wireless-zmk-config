@@ -32,7 +32,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_LGUI|MOD_RSFT|MOD_RGUI|MOD_RALT|MOD_LALT)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_RSFT|MOD_LALT)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_LSFT)>;
         };
         lt_hold: lt_hold {
             compatible = "zmk,behavior-hold-tap";
