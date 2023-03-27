@@ -31,8 +31,8 @@
                 <&kp GRAVE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_LALT|MOD_LGUI|MOD_RGUI|MOD_RALT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_LGUI|MOD_RSFT|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_RSFT)>;
         };
     };
 
