@@ -14,43 +14,38 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             quick-tap-ms = <100>;
             flavor = "balanced";
         };
+
         grave_keep: grave_keep {
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_KEEP";
-            bindings =
-                <&lt_hold 1 ESCAPE>,
-                <&kp GRAVE>;
+            bindings = <&lt_hold 1 ESCAPE>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_LGUI|MOD_RSFT|MOD_RGUI|MOD_RALT|MOD_LALT)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_LSFT)>;
         };
+
         lt_hold: lt_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_HOLD";
-            bindings =
-                <&mo>,
-                <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "hold-preferred";
         };
+
         mt_balanced: mt_balanced {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_BALANCED";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -88,10 +83,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W               &kp F        &kp P      &kp B      &kp J  &kp L          &kp U          &kp Y  &hm RIGHT_ALT SEMICOLON  &none
-&none  &kp A  &kp R               &kp S        &kp T      &kp G      &kp M  &kp N          &kp E          &kp I                    &kp O  &none
-&none  &kp Z  &kp X               &kp C        &kp D      &kp V      &kp K  &kp H      &kp COMMA  &hm RCTRL DOT      &hm RIGHT_GUI SLASH  &none
-                     &mt LEFT_SHIFT TAB  &grave_keep  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
+&kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &none
+&kp LCTRL       &kp A  &kp R  &kp S         &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O          &none
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp SLASH      &none
+                              &kp LEFT_GUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -103,10 +98,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none              &kp N1        &kp N2        &kp N3             &kp N4        &kp N5         &kp N6    &kp N7  &kp N8    &kp N9         &kp N0   &none
-&none        &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN   &kp C_PLAY_PAUSE  &kp C_VOL_UP    &vim_escape  &kp DOWN  &kp UP  &kp LEFT      &kp RIGHT  &trans
-&none  &hm LEFT_GUI LG(Z)     &kp LCTRL     &kp LG(C)  &kp LS(LG(SPACE))     &kp LG(V)         &trans    &trans  &trans    &trans  &kp LG(SLASH)  &trans
-                                               &trans             &trans        &trans         &trans    &trans  &trans
+&none  &kp N1              &kp N2        &kp N3        &kp N4             &kp N5          &kp N6       &kp N7    &kp N8  &kp N9    &kp N0         &none
+&none  &kp C_BRI_DN        &kp C_BRI_UP  &kp C_VOL_DN  &kp C_PLAY_PAUSE   &kp C_VOL_UP    &vim_escape  &kp DOWN  &kp UP  &kp LEFT  &kp RIGHT      &trans
+&none  &hm LEFT_GUI LG(Z)  &kp LCTRL     &kp LG(C)     &kp LS(LG(SPACE))  &kp LG(V)       &trans       &trans    &trans  &trans    &kp LG(SLASH)  &trans
+                                         &trans        &trans             &trans          &trans       &trans    &trans
             >;
         };
 
@@ -118,19 +113,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &none          &kp EXCL            &kp AT           &kp HASH          &kp DLLR         &kp PRCNT    &kp CARET               &kp AMPS                 &kp KP_MULTIPLY            &kp LPAR            &kp RPAR   &none
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)   &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp MINUS  &hm RIGHT_SHIFT EQUAL  &hm RIGHT_CONTROL LEFT_BRACKET  &hm RIGHT_ALT RBKT  &hm RIGHT_GUI BSLH  &trans
- &none            &trans            &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE            &trans    &kp UNDER               &kp PLUS                        &kp LBRC            &kp RBRC            &kp PIPE  &trans
-                                                  &kp RS(TAB)            &trans            &trans      &kp RET                 &trans                          &trans
+&none   &kp EXCL          &kp AT            &kp HASH           &kp DLLR          &kp PRCNT           &kp CARET  &kp AMPS   &kp KP_MULTIPLY   &kp LPAR           &kp RPAR            &none
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)   &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &hm RIGHT_GUI BSLH  &kp GRAVE
+&none   &trans            &trans            &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans              &kp UNDER  &kp PLUS   &kp LBRC          &kp RBRC           &kp PIPE            &kp TILDE
+                                            &trans             &trans            &trans              &trans     &trans     &trans
             >;
         };
 
         functional {
             bindings = <
-&trans        &kp F1        &kp F2                &kp F3             &kp F4      &kp F5      &kp F6    &kp F7  &kp F8     &kp F9  &kp F10  &trans
-&trans        &trans        &trans  &kp LG(LS(NUMBER_4))  &kp LG(LC(SPACE))      &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2       &out OUT_TOG  &bt BT_CLR      &trans    &trans  &trans     &trans   &trans  &trans
-                                                  &trans             &trans      &trans      &trans    &trans  &trans
+&trans  &kp F1        &kp F2        &kp F3                &kp F4             &kp F5        &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
+&trans  &trans        &trans        &kp LG(LS(NUMBER_4))  &kp LG(LC(SPACE))  &trans        &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &out OUT_TOG       &bt BT_CLR    &trans    &trans    &trans  &trans     &trans   &trans
+                                    &trans                &trans             &trans        &trans    &trans    &trans
             >;
         };
     };
